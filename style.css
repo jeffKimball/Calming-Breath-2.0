@@ -1,0 +1,125 @@
+/* basic resets */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #161616;
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#logo {
+    font-family: "Kaushan Script", serif;
+    color:rgb(246, 248, 249, 0.7);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0 5px;
+    /* top: 10px; */
+    /* left: 10px; */
+}
+
+#breath {
+    height: 20px;
+    width: 30px;
+    cursor: text;
+    opacity: 0.8;
+}
+
+.card-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 260px;
+    height: 400px;
+    background: rgb(27, 27, 27);
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .card:first-of-type {
+    border-left: 2.5px solid rgb(246, 248, 249, 0.8);
+    border-top: 2.5px solid rgba(246, 248, 249, 0.8);
+    border-right: 0.5px solid rgb(246, 248, 249, 0.8);
+    border-bottom: 0.5px solid rgb(246, 248, 249, 0.3);
+  }
+  
+  .card:nth-of-type(2) {
+    border-left: 2.5px solid rgb(246, 248, 249, 0.8);
+    border-top: 2.5px solid rgba(246, 248, 249, 0.8);
+    border-right: 0.5px solid rgb(246, 248, 249, 0.8);
+    border-bottom: 0.5px solid rgb(246, 248, 249, 0.3);
+  }
+  
+  .card:last-of-type {
+    border-left: 2.5px solid rgb(246, 248, 249, 0.8);
+    border-top: 2.5px solid rgba(246, 248, 249, 0.8);
+    border-right: 0.5px solid rgb(246, 248, 249, 0.8);
+    border-bottom: 0.5px solid rgb(246, 248, 249, 0.3);
+  }
+  
+  .card-content {
+    color:rgb(246, 248, 249, 0.7);
+    padding: 10px 30px;
+  }
+  
+  h2 {
+    font-family: "Kaushan Script", serif;
+    border-bottom: 2px solid rgba(246, 248, 249, 0.8);
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .card-content p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    color: rgba(246, 248, 249, 0.8);
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgba(246, 248, 249, 0.8);
+    border-radius: 4px;
+    padding: 2px 25px;
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    padding: 2px 26px;
+    background-color: rgb(38, 38, 38);
+    transition: all 0.2s;
+
+  }
+  
