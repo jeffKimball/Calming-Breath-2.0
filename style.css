@@ -21,6 +21,15 @@ header {
     display: flex;
     align-items: center;
     height: 50px;
+    margin:0 0 0 10px
+}
+
+#width-display {
+  font-size: 12px;
+  color: white;
+  position:absolute;
+  right: 10px;
+  top: 0;
 }
 
 #logo {
@@ -29,8 +38,6 @@ header {
     font-size: 20px;
     letter-spacing: 1px;
     margin: 0 5px;
-    /* top: 10px; */
-    /* left: 10px; */
 }
 
 #breath {
@@ -41,20 +48,22 @@ header {
 }
 
 .card-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+
+  background-color:rgb(74, 74, 74);
+  width: 460px;
+  height: 270px;
+  position: relative;
+  margin: 20px auto 15px;
+
+}
   
   .card {
-    width: 260px;
-    height: 400px;
+    width: 450px;
+    height: 260px;
     background: rgb(27, 27, 27);
-    margin: 30px auto;
+    margin: 5px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
   }
   
   .card:first-of-type {
@@ -96,9 +105,9 @@ header {
   }
   
   .card-content p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   
   .btn {
@@ -122,4 +131,57 @@ header {
     transition: all 0.2s;
 
   }
-  
+
+
+/* Circle Selector Styles */
+
+#selectors {
+  display: flex;
+  justify-content: center;
+}
+
+#circle-wrapper {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(246, 248, 249, 0.8);
+  border-radius: 50%;
+}
+
+/* circle links */
+/* [id^=breath]{
+  display: none;
+}
+
+#breath-box:target {
+  display: block;
+}
+
+#breath-triangle:target {
+  display: block;
+}
+
+#breath-equal:target {
+  display: block;
+} */
+
+/* Initially hide all cards */
+[id^=breath] {
+  display: none;
+}
+
+/* Show the card that is the target */
+[id^=breath]:target {
+  display: block;
+}
+
+/* Ensure that the first card is shown by default */
+#breath-box {
+  display: block;
+}
+

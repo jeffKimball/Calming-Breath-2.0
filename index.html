@@ -11,14 +11,14 @@
     <title>Calming Breath</title>
 </head>
 <body>
-
+<span id="width-display">num</span>
     <header>
         <h1 id="logo">Calming Breath</h1>
         <img id="breath" src="images/exhale.png" alt="">
     </header>
 
     <div class="card-container">
-        <div class="card">
+        <div class="card" id="breath-box">
             <div class="card-content">
                 <h2>Box Breathing</h2>
                 <h3>4 - 4 - 4 - 4</h3>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="breath-triangle">
             <div class="card-content">
                 <h2>Triangle Breathing</h2>
                 <h3>4 - 4 - 4</h3>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="card">
-            <div class="card-content">
+            <div class="card-content" id="breath-equal">
                 <h2>Equal Breathing</h2>
                 <h3>4 - 4</h3>
                 <p>Equal breathing is also known as Sama Vrittri. It is related to yoga practices and is effective in reducing stress hormones in the body and calming the autonomic nervous system.
@@ -48,6 +48,27 @@
             </div>
         </div>
     </div>
+    <section id="selectors">
+        <div id="circle-wrapper">
+            <a href="#breath-box"><div class="circle"></div></a>
+            <a href="#breath-triangle"><div class="circle"></div></a>
+            <a href="#breath-equal"><div class="circle"></div></a>
+        </div>
+    </section>
     
+<script>
+let widthDisplay = document.getElementById('width-display')
+    function updateWidthText() {
+    // Update the innerText with the current width of the window
+    widthDisplay.innerText = `${window.innerWidth}px`;
+}
+
+// Listen for window resize events
+window.addEventListener('resize', updateWidthText);
+
+// Initial update when the page loads
+updateWidthText();
+</script>
+
 </body>
 </html>
