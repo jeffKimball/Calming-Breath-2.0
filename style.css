@@ -153,26 +153,23 @@ header {
   border-radius: 50%;
 }
 
+/* Initial dark background for all circles */
+.active {
+  background-color: rgba(246, 248, 249, 0.8);
+}
+
+
+
 /* circle links */
 [id^=breath]{
   display: none;
   
 }
 
-#breath-box:target {
-  display: block;
-  z-index: 10;
-}
 
-#breath-triangle:target {
-  display: block;
-  z-index: 10;
-}
 
-#breath-circle:target {
-  display: block;
-  z-index: 10;
-}
+
+
 
 
 
