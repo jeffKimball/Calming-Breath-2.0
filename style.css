@@ -17,6 +17,14 @@
     background-color: #161616;
   }
 
+  #width-display {
+    font-size: 12px;
+    color: white;
+    position:absolute;
+    right: 10px;
+    top: 0;
+  }
+
 header {
     display: flex;
     align-items: center;
@@ -24,13 +32,6 @@ header {
     margin:0 0 0 10px
 }
 
-#width-display {
-  font-size: 12px;
-  color: white;
-  position:absolute;
-  right: 10px;
-  top: 0;
-}
 
 #logo {
     font-family: "Kaushan Script", serif;
@@ -38,6 +39,7 @@ header {
     font-size: 20px;
     letter-spacing: 1px;
     margin: 0 5px;
+    cursor: default;
 }
 
 #logo-breath {
@@ -45,6 +47,7 @@ header {
     width: 30px;
     cursor: text;
     opacity: 0.8;
+    cursor: default;
 }
 
 .card-container {
@@ -53,7 +56,7 @@ header {
   width: 460px;
   height: 270px;
   position: relative;
-  margin: 20px auto 15px;
+  margin: 25px auto 15px;
 
 }
   
@@ -158,13 +161,6 @@ header {
   background-color: rgba(246, 248, 249, 0.8);
 }
 
-
-
-/* circle links */
-[id^=breath]{
-  display: none;
-  
-}
 
 
 
