@@ -13,3 +13,66 @@
     height: 50px;
     margin:0 0 0 10px
 }
+
+.mask-cap {
+    background-color: #161616;
+    height: 25px;
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.mask-left,
+.mask-right {
+    width: 5%;
+    height: 280px;
+    background-color:#161616;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    background-color: #161616;
+    border: 2px solid var(--off-white);
+}
+
+.breath-text {
+    font-family: "Kaushan Script", serif;
+    color:var(--off-white);
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    cursor: default;
+}
+
+.action-btn-wrapper {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.action-btn {
+    color: var(--off-white);
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    border: 1px solid var(--off-white);
+    border-radius: 4px;
+    padding: 2px 25px;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    padding: 2px 26px;
+    background-color: rgb(38, 38, 38);
+    transition: all 0.2s;
+
+}
+
